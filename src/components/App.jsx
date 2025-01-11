@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Toolbar from './Toolbar';
-import Portfolio from './Portfolio';
+import ProjectList from './ProjectList';
 import '../App.css';
 
 const App = ({ filters, projects }) => {
@@ -25,7 +25,7 @@ const App = ({ filters, projects }) => {
             selected={filter}
             onSelectFilter={(filter) => handleSetFilter(filter)}
          />
-         <Portfolio projects={handleFilterProjects(filter)} />
+         <ProjectList projects={handleFilterProjects(filter)} />
       </>
    );
 };

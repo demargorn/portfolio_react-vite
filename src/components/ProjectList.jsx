@@ -1,4 +1,4 @@
-const Portfolio = ({ projects }) => {
+const ProjectList = ({ projects }) => {
    function handleRenderProjects(projects) {
       return projects.map((project, i) => (
          <div className='project' key={`project-${project.category}-${i}`}>
@@ -10,4 +10,4 @@ const Portfolio = ({ projects }) => {
    return <div className='portfolio'>{handleRenderProjects(projects)}</div>;
 };
 
-export default Portfolio;
+export default ProjectList;
